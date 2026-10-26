@@ -16,3 +16,4 @@ versions/
 *.log
 .DS_Store
 Thumbs.db
+.pages-deploy/

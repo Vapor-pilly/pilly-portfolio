@@ -5,10 +5,10 @@ import './jelly-orbit.css';
 
 // Internal category mapping only; no visible labels or captions yet.
 const icons = [
-  { src: '/jelly/internships.png', alt: 'Internships' },
-  { src: '/jelly/research.png', alt: 'Research' },
-  { src: '/jelly/achievements.png', alt: 'Achievements' },
-  { src: '/jelly/certificates.png', alt: 'Certificates' },
+  { src: `${import.meta.env.BASE_URL}jelly/internships.png`, alt: 'Internships' },
+  { src: `${import.meta.env.BASE_URL}jelly/research.png`, alt: 'Research' },
+  { src: `${import.meta.env.BASE_URL}jelly/achievements.png`, alt: 'Achievements' },
+  { src: `${import.meta.env.BASE_URL}jelly/certificates.png`, alt: 'Certificates' },
 ];
 
 export default function JellyOrbit() {

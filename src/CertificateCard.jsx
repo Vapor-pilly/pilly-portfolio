@@ -29,7 +29,7 @@ export default function CertificateCard({ onClose, panelRef, categoryIndex = 3 }
     <div className="certificate-scene" ref={panelRef}>
       <div className="certificate-frost">
       <article className="certificate-card" aria-labelledby="certificate-title">
-        <img className="certificate-emblem" src={`/jelly/${category.icon}.png`} alt="" draggable={false} />
+        <img className="certificate-emblem" src={`${import.meta.env.BASE_URL}jelly/${category.icon}.png`} alt="" draggable={false} />
         <header className="certificate-header">
           <h2 id="certificate-title">{category.title}</h2>
           <button type="button" className="certificate-close" aria-label={`Close ${category.title.toLowerCase()} details`} onClick={onClose}>×</button>

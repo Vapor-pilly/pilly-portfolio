@@ -28,3 +28,9 @@ pnpm build
 静态产物位于 `dist/`。本仓库保存源代码和运行所需图片；本地截图、历史样式备份和依赖目录不纳入版本控制。
 
 第三方 React Bits 组件许可见 `src/components/REACT_BITS_LICENSE.md`。
+
+## GitHub Pages
+
+网站地址：https://vapor-pilly.github.io/pilly-portfolio/
+
+推送到 `main` 后，GitHub Actions 会自动构建并发布 `dist/`。`vite.config.js` 为正式构建配置 `/pilly-portfolio/` 基础路径，本地开发仍使用 `/`。

@@ -108,9 +108,9 @@ function App() {
     <main className="home">
       <div className="fixed-lanyard">
         <Lanyard
-          frontImage="/card-photo.jpg"
-          backImage="/card-back.jpg"
-          strapImage="/band.png"
+          frontImage={`${import.meta.env.BASE_URL}card-photo.jpg`}
+          backImage={`${import.meta.env.BASE_URL}card-back.jpg`}
+          strapImage={`${import.meta.env.BASE_URL}band.png`}
           anchor="left"
           anchorInset={150}
           size={0.3}
