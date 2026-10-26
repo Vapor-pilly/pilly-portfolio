@@ -1,0 +1,39 @@
+.jelly-section {
+  position: relative;
+  z-index: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  padding: 100px 32px;
+  background: #fff;
+}
+.jelly-section.is-expanded { justify-content: flex-start; }
+
+.jelly-stage { width: min(1040px, 100%); }
+.jelly-orbit .orbit-item-inner { overflow: visible; background: none; border-radius: 0; box-shadow: none; }
+.jelly-orbit .orbit-image {
+  object-fit: contain;
+  filter: drop-shadow(0 9px 8px rgb(80 70 95 / .12));
+}
+
+.scroll-next {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgb(255 255 255 / .8);
+  color: #8f9691;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.scroll-next svg { width: 20px; height: 20px; }
+@media (max-width:600px) { .jelly-section { padding: 100px 16px; } }

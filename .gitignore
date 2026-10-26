@@ -1,0 +1,18 @@
+node_modules/
+dist/
+
+# Local previews and previous design studies
+versions/
+/*.png
+/frost-style-verification.json
+/decorations-notes.md
+/motion-reference.md
+/public/decorations/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

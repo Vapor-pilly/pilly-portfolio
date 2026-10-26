@@ -1,0 +1,24 @@
+.detail-dialog,
+.detail-dialog.black {
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+.detail-dialog .detail-star {
+  display: block;
+  padding: 0;
+  width: 100%;
+  max-height: calc(100dvh - 48px);
+}
+
+.detail-dialog .detail-star article {
+  border-top: 0;
+  border-radius: inherit;
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+}
+
+.detail-dialog .detail-content p:last-child { margin-bottom: 0; }
+
+.detail-dialog .detail-topline { justify-content: flex-end; }

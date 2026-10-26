@@ -1,0 +1,24 @@
+/* finesse · component: certificate card · milky glass */
+.jelly-section.is-expanded { background: linear-gradient(180deg, #fff, #f8f8fa 40%, #edeef2); padding-top: 100px; padding-bottom: 150px; }
+.certificate-scene { width: min(1040px, 82%); background: transparent; isolation: isolate; border-radius: 44px; margin: 36px 0 30px; animation: certificate-appear 700ms cubic-bezier(.16,1,.3,1) both; scroll-margin-top: 96px; }
+.certificate-scene::before, .certificate-scene::after { content: none; }
+.certificate-frost { position: relative; overflow: hidden; border: 1px solid rgb(255 255 255 / .88); border-radius: inherit; background: linear-gradient(145deg, #fcfcfe, #efeff5); backdrop-filter: blur(22px) saturate(1.05); -webkit-backdrop-filter: blur(22px) saturate(1.05); box-shadow: inset 0 2px 2px rgb(255 255 255 / .95), inset 2px 0 2px rgb(255 255 255 / .55), inset -1px -2px 2px rgb(255 255 255 / .8), 4px 6px 12px rgb(78 78 104 / .04), 20px 28px 64px -24px rgb(91 91 117 / .2); transition: transform 450ms cubic-bezier(.2,.8,.2,1), box-shadow 450ms ease; }
+.certificate-frost::before { content: ''; position: absolute; inset: 0; border-radius: inherit; border-left: 3px solid rgb(136 138 159 / .14); pointer-events: none; }
+.certificate-frost .certificate-card { --certificate-text: #62616e; background: transparent; border: 0; border-radius: inherit; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; text-shadow: none; }
+.certificate-emblem { display: block; width: 88px; height: 88px; object-fit: contain; margin: 0 0 30px; filter: drop-shadow(0 10px 15px rgb(176 131 167 / .14)); }
+.certificate-header { margin-bottom: 30px; }
+.certificate-header h2 { color: #25242b; }
+.certificate-close { position: absolute; top: 32px; right: 32px; margin: 0; color: #74737f; background: rgb(255 255 255 / .5); border-color: rgb(161 160 179 / .24); }
+.certificate-close:focus-visible { outline-color: #686576; }
+.certificate-close:active { background: #dedee7; }
+.certificate-list li::marker { color: #9692a3; }
+.certificate-list p { color: #73717e; }
+.certificate-list a { color: #565366; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+.certificate-list a:hover { color: #292435; }
+@media (hover: hover) { .certificate-close:hover { background: rgb(255 255 255 / .95); color: #34323e; } }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) { .certificate-scene:hover .certificate-frost { transform: translateY(-10px); box-shadow: inset 0 2px 2px rgb(255 255 255 / .95), inset 2px 0 2px rgb(255 255 255 / .55), inset -1px -2px 2px rgb(255 255 255 / .8), 6px 9px 16px rgb(78 78 104 / .04), 28px 40px 78px -26px rgb(91 91 117 / .23); } }
+@media (max-width:850px) { .certificate-scene { width: 90%; border-radius: 34px; scroll-margin-top: 70px; } .jelly-section.is-expanded { padding-left: 22px; padding-right: 22px; } }
+@media (max-width:480px) { .certificate-scene { width: 100%; border-radius: 28px; } .certificate-emblem { width: 72px; height: 72px; margin-bottom: 24px; } }
+@media (prefers-reduced-motion: reduce) { .certificate-frost { transition: none; } }
+
+

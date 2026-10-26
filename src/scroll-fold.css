@@ -1,0 +1,16 @@
+/* Scroll translation is separate from the existing entrance/hover transforms. */
+.welcome h1 { font-size: clamp(40px, 4vw, 58px); }
+.welcome p { font-size: clamp(25px, 2.7vw, 39px); }
+.folder { translate: var(--fold-x, 0px) var(--fold-y, 0px); scale: var(--fold-scale, 1); }
+.folder-undergraduate { z-index: 2; }
+.folder-postgraduate { z-index: 3; }
+.folder-summer { z-index: 4; }
+.folder-contact { z-index: 5; }
+.home-stage.is-folding .folder-object { transform: perspective(750px) rotateY(0deg) rotateX(0deg); }
+.jelly-section { min-height: 70dvh; justify-content: flex-start; padding-top: 48px; padding-bottom: 96px; }
+@media (max-width:850px) {
+  .welcome h1 { font-size: 44px; }
+  .welcome p { font-size: clamp(26px, 4.4vw, 32px); }
+  .jelly-section { padding-top: 36px; }
+}
+@media (prefers-reduced-motion:reduce) { .folder { translate: none; scale: none; } }
